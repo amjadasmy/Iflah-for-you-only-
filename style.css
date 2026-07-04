@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial;
+    background: linear-gradient(120deg, pink, purple, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 0 30px gold;
+}
+
+/* PROFILE */
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid gold;
+    object-fit: cover;
+}
+
+.profile h2 {
+    margin: 10px 0 5px;
+}
+
+.profile p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* RING */
+.ring {
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+    border: 5px solid gold;
+    border-radius: 50%;
+    box-shadow: 0 0 20px gold;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.2); }
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: gold;
+}
+
+#noBtn {
+    background: white;
+    position: absolute;
+}
+
+/* POEM */
+#poem {
+    margin-top: 20px;
+    font-size: 15px;
+}
